@@ -1,0 +1,85 @@
+body{
+  background:linear-gradient(135deg,#4c6ef5,#3b5bdb);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  gap:40px;
+  font-family:Arial;
+}
+
+.box{
+  background:white;
+  width:320px;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+input{
+  width:100%;
+  padding:11px;
+  margin:8px 0;
+  border:1px solid #ddd;
+  border-radius:6px;
+}
+
+.forgot{
+  font-size:13px;
+  text-align:center;
+  display:block;
+  text-decoration:none;
+  color:#4c6ef5;
+}
+
+.btn{
+  width:100%;
+  padding:12px;
+  margin-top:15px;
+  background:#1c7ed6;
+  border:none;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.switch{
+  text-align:center;
+  margin-top:12px;
+  font-size:14px;
+}
+
+.divider{
+  display:flex;
+  align-items:center;
+  margin:18px 0;
+  color:#888;
+  font-size:13px;
+}
+
+.divider::before,
+.divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:#e0e0e0;
+}
+
+.divider span{ margin:0 10px; }
+
+.social{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border-radius:6px;
+  border:1px solid #ddd;
+  cursor:pointer;
+}
+
+.fb{ background:#4267B2; color:white; border:none; }
+.google{ background:white; }

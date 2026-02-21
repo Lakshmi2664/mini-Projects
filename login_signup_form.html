@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login/Signup Form</title>
+<script src="https://kit.fontawesome.com/1cbb583e3a.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="B23ec079.css">
+</head>
+<body>
+
+<!-- LOGIN BOX -->
+<div class="box login-box" id="loginBox">
+  <h2>Login</h2>
+
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+
+  <a href="#" class="forgot">Forgot password?</a>
+
+  <button class="btn">Login</button>
+
+  <p class="switch">
+    Don't have an account?
+    <a href="#" onclick="showSignup(event)">Signup</a>
+  </p>
+
+  <div class="divider"><span>Or</span></div>
+
+  <button class="social fb">Login with Facebook</button>
+  <button class="social google"> <i class="fa-brands fa-google" style="color: #0b0f90;"></i>  Login with Google</button>
+</div>
+
+
+<!-- SIGNUP BOX -->
+<div class="box signup-box" id="signupBox" style="display:none;">
+  <h2>Signup</h2>
+
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Create password">
+  <input type="password" placeholder="Confirm password">
+
+  <button class="btn">Signup</button>
+
+  <p class="switch">
+    Already have an account?
+    <a href="#" onclick="showLogin(event)">Login</a>
+  </p>
+
+  <div class="divider"><span>Or</span></div>
+
+  <button class="social fb">Login with Facebook</button>
+  <button class="social google"><i class="fa-brands fa-google" style="color: #0b0f90;"></i> Login with Google</button>
+</div>
+
+
+<script>
+function showSignup(e){
+  e.preventDefault();
+  document.getElementById("loginBox").style.display="none";
+  document.getElementById("signupBox").style.display="block";
+}
+
+function showLogin(e){
+  e.preventDefault();
+  document.getElementById("signupBox").style.display="none";
+  document.getElementById("loginBox").style.display="block";
+}
+</script>
+
+</body>
+</html>
